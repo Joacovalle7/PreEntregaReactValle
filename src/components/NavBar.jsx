@@ -4,7 +4,7 @@ import './NavBar.css';
 const NavBar = () => {
   return (
     <nav className="navbar">
-      <h1 className="navbar-logo">Vaie Hardware</h1>
+      <h1 className="navbar-logo">Vaie Hardware 🖥️</h1>
       <ul className="navbar-menu">
         <li><a href="#">Inicio</a></li>
         <li><a href="#">Productos</a></li>
