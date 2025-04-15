@@ -1,7 +1,10 @@
 import React from 'react';
 import './NavBar.css';
+import CartWidget from '../CartWidget/CartWidget';
 
-const NavBar = () => {
+
+
+const NavBar = ({ cartCount }) => {
   return (
     <nav className="navbar">
       <h1 className="navbar-logo">Vaie Hardware 🖥️</h1>
@@ -10,7 +13,7 @@ const NavBar = () => {
         <li><a href="#">Productos</a></li>
         <li><a href="#">Ofertas</a></li>
         <li><a href="#">Contacto</a></li>
-        <li><a href="#">🛒 Carrito</a></li>
+        <li><CartWidget cartCount={cartCount} /></li>
       </ul>
     </nav>
   );
