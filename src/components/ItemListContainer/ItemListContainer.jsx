@@ -1,24 +1,32 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
+import styles from './ItemList.module.css'
+import ItemList from './ItemList';
 
-const ItemListContainer = ({ greeting, addToCart }) => {
-  return (
-    <section>
-      <h2>{greeting}</h2>
-      <div className="product-list">
-        <div className="product-item">
-          <h3>Mouse Gamer</h3>
-          <p>$4500</p>
-          <button onClick={addToCart}>Agregar al carrito</button>
-        </div>
-        <div className="product-item">
-          <h3>Teclado Mecánico</h3>
-          <p>$9200</p>
-          <button onClick={addToCart}>Agregar al carrito</button>
-        </div>
-      </div>
-    </section>
-  );
-};
 
-export default ItemListContainer;
+const ItemListContainer = () => {
+
+  const [productos, setProductos] = useState([])
+  useEffect(() => {
+  fetch('https://fakestoreapi.com/products/')
+  .then(response => response.json())
+  .then(json => {
+      setProductos(json)
+  })
+  .catch(error => {
+  console.log("estamos teniendo errores" + error)
+  })
+}, [])
+
+return (
+<>
+{
+ <ItemList productos={productos}/>
+}
+</>
+)
+
+}
+
+export default ItemListContainer
 

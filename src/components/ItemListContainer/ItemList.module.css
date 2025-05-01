@@ -1,0 +1,53 @@
+.carga {
+  text-align: center;
+  font-size: 1rem; /* antes 1.3rem */
+  padding: 3rem;
+  color: #333;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.63);
+  margin: 16px;
+  padding: 16px;
+  width: 600px;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.title {
+  font-size: 20px; /* antes 25px */
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: black;
+  text-shadow: 1px 1px 3px #333;
+  text-align: center;
+}
+
+.description {
+  font-size: 16px; /* antes 20px */
+  font-weight: 400;
+  text-align: center;
+  color: #00aaff;
+  margin-bottom: 12px;
+}
+
+.price {
+  font-size: 18px; /* antes 25px */
+  font-weight: 500;
+  color: #00aaff;
+  text-align: center;
+}
+
+.cardcontainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}

@@ -1,0 +1,36 @@
+.card {
+  background-color: #00aaff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  margin-top: 50px;
+  margin-left: 20%;
+  padding: 16px;
+  width: 80%;        
+  max-width: 800px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.title {
+  font-size: 28px; 
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px #333;
+  text-align: center;
+}
+
+.description {
+  font-size: 20px; 
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.price {
+  font-size: 24px; 
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+}
